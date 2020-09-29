@@ -13,16 +13,18 @@ def add_comma():
     global clients
 
     clients += ','
-def print_welcome():
+def _print_welcome():
     print('WELCOME TO PLATZI VENTAS')
     print('*' * 50)
     print('What would you like to do today?')
     print('[D]elete Client')
     print('[C]reate client')
 
-    clients += ','
+if __name__ == '__main__':
+  _print_welcome()
+  command = input()
 
-if name == '__main__':
-    client_name= input('What is the client name')
-    create_client(client_name)
-    list_clients()
+  
+elif command == 'D':
+        pass
+    
